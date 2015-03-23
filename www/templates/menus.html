@@ -6,7 +6,40 @@
             <h1 class="title dark item-text-wrap">FILTRES</h1>
         </ion-header-bar>
         <ion-content padding="true" scroll="false" class="dark-bg">
+            <div class="item item-divider dark-bg light" style="border: none; font-weight: 300;">
+                PÉRIODE
+            </div>
+            <div class="item item-icon-left item-input light dark-bg" style="border: none;">
+                <i class="icon ion-calendar"></i>
+                <input ng-model="dateBegin" type="date" class="dark-bg light text-right" style="color: #FFF;">
+            </div>
+            <label class="item item-icon-left item-select light dark-bg" style="border: none;">
+                <i class="icon ion-clock light"></i>
+                <select style="height: 50px; color: #FFF; background: #444444;" class="light bg-dark">
+                    <option ng-model="duration" value="" selected>Indifférente</option>
+                    <option ng-model="duration" value="1">1 jour</option>
+                    <option ng-model="duration" value="1">2 jours</option>
+                    <option ng-model="duration" value="1">3 jours</option>
+                    <option ng-model="duration" value="1">4 jours</option>
+                    <option ng-model="duration" value="1">5 jours</option>
+                    <option ng-model="duration" value="1">6 jours</option>
+                    <option ng-model="duration" value="1">7 jours</option>
+                </select>
+            </label>
 
+            <br />
+            <div class="item item-divider dark-bg light" style="border: none; font-weight: 300;">
+                RECHERCHER PAR
+            </div>
+            <div class="item dark-bg light" style="border: none; padding-top: 0; padding-bottom: 0;">
+              <ion-toggle ng-model="granFormateur" toggle-class="toggle-positive" class="dark-bg light" style="border: none;">Formateur</ion-toggle>
+            </div>
+            <div class="item dark-bg light" style="border: none; padding-top: 0; padding-bottom: 0;">
+                <ion-toggle ng-model="granFormation" toggle-class="toggle-positive" class="dark-bg light" style="border: none;">Formation</ion-toggle>
+            </div>
+            <div class="item dark-bg light" style="border: none; padding-top: 0; padding-bottom: 0;">
+                <ion-toggle ng-model="granVille" toggle-class="toggle-positive" class="dark-bg light" style="border: none;">Ville</ion-toggle>
+            </div>
         </ion-content >
     </ion-side-menu>
     <!-- FIN MENU DE GAUCHE -->
@@ -17,7 +50,6 @@
     </ion-side-menu-content>
     <!-- FIN CONTENT -->
 
-
     <!-- MENU DE DROITE -->
     <ion-side-menu side="right">
         <ion-header-bar class="bar bar-header bar-dark item-input-inset">
@@ -25,9 +57,21 @@
         </ion-header-bar>
         <ion-content padding="true" scroll="false" class="dark-bg">
             <div class="list">
-                <a ng-repeat="item in history" class="item dark-bg" style="border: none;" href="#">
-                    <h2 class="light" style="font-weight:700; font-size: 1.1em;">{{item.results}} résultat<span ng-if="item.results > 1">s</span></h2>
-                    <p class="light">{{item.date}}</p>
+                <a class="item dark-bg" style="border: none;" href="#">
+                    <h2 class="light" style="font-weight:700; font-size: 1.1em;">64 résultats</h2>
+                    <p class="light">27/11/2014</p>
+                </a>
+                <a class="item dark-bg" style="border: none;" href="#">
+                    <h2 class="light" style="font-weight:700; font-size: 1.1em;">9 résultats</h2>
+                    <p class="light">29/11/2014</p>
+                </a>
+                <a class="item dark-bg" style="border: none;" href="#">
+                    <h2 class="light" style="font-weight:700; font-size: 1.1em;">1 résultat</h2>
+                    <p class="light">06/12/2014</p>
+                </a>
+                <a class="item dark-bg" style="border: none;" href="#">
+                    <h2 class="light" style="font-weight:700; font-size: 1.1em;">42 résultat</h2>
+                    <p class="light">06/02/2015</p>
                 </a>
             </div>
         </ion-content>
