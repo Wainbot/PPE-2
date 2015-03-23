@@ -1,13 +1,22 @@
 <ion-view>
     <ion-header-bar class="bar bar-header item-input-inset">
-        <button class="button button-icon button-clear ion-gear-b" menu-toggle="left" style="color: #444444;">
+        <button class="button button-icon button-clear button-dark ion-ios-gear-outline" menu-toggle="left">
         </button>
-        <label class="item-input-wrapper">
-            <i class="icon ion-ios7-search placeholder-icon"></i>
-            <input type="search" placeholder="Rechercher une formation">
-        </label>
-        <button class="button button-clear" style="color: #444444;">
-            Valider
+        <h1 class="title dark item-text-wrap">RECHERCHE DE FORMATIONS</h1>
+        <button class="button button-icon button-clear button-dark ion-ios-timer-outline" menu-toggle="right">
         </button>
     </ion-header-bar>
+
+    <ion-content padding="true" scroll="false" class="light-bg">
+        <div class="padding-vertical">
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="search" placeholder="Recherche">
+            </label>
+            <div class="row">
+                <button class="button button-icon positive-bg ion-ios-search light" style="width: 70px; height: 70px; border-radius: 5em; font-size: 2em; margin: auto;">
+                </button>
+            </div>
+        </div>
+    </ion-content>
 </ion-view>
