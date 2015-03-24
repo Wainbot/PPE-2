@@ -1,0 +1,25 @@
+<ion-view>
+    <ion-header-bar class="bar bar-header item-input-inset">
+        <button class="button button-icon button-clear button-dark ion-ios-search-strong" nav-direction="exit" ui-sref="app.search">
+        </button>
+        <h1 class="title dark item-text-wrap">AFFICHAGE DES FORMATIONS</h1>
+    </ion-header-bar>
+
+    <ion-content padding="false" scroll="y" class="light-bg">
+        <br />
+        <div class="row">
+            <div class="col text-center">Formation</div>
+            <div class="col text-center">Formateur</div>
+            <div class="col text-center">Date</div>
+            <div class="col text-center">Durée</div>
+            <div class="col text-center">Ville</div>
+        </div>
+        <ion-item ng-repeat="item in items" class="row" style="font-size: 13px; font-weight: 300;">
+            <div class="col text-center">{{item.formation}}</div>
+            <div class="col text-center">{{item.formateur}}</div>
+            <div class="col text-center">{{item.date}}</div>
+            <div class="col text-center">{{item.duree}}</div>
+            <div class="col text-center">{{item.ville}}</div>
+        </ion-item>
+    </ion-content>
+</ion-view>

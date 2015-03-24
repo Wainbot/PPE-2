@@ -19,7 +19,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url: "/app",
     abstract: true,
     templateUrl: "templates/menus.html",
-    controller: 'AppCtrl'
+    controller: 'AppController'
   })
 
   .state('app.search', {
@@ -29,6 +29,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         templateUrl: "templates/search.html"
       }
     }
+  })
+
+  .state('results', {
+    url: "/results",
+    templateUrl: "templates/results.html",
+    controller: 'ResultsController'
   });
 
   // if none of the above states are matched, use this as the fallback

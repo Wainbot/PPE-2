@@ -1,3 +1,17 @@
 /* Empty. Add your own CSS if you like */
 
 @import "ionic.app.css";
+
+.item-history {
+    border: none;
+    background: rgba(40, 40, 40, 0.2);
+    margin-bottom: 5px;
+}
+
+.item-history:hover {
+    background: #387ef5;
+}
+
+.item-history:hover .light  {
+    color: #FFF;
+}
